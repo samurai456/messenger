@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="/static/mainPageStyle.css">
+		<script async src="/static/mainPage.js"></script>
+	</head>
+	<body>
+		<div class="mainContainer">
+			<div class="contentWrapper leftContainer">
+				<div class="inTheTopOfContent search">
+					<img src="/static/settings.png" class="settingsImg" data-button="settings">
+					<input placeholder="search" class="searchField" data-mousein-bgcolor="#8EA7E9">
+					<img src="/static/loupe.png" class="loupeImg">
+				</div>
+				<div class="leftContent content">
+				</div>
+			</div>
+			<div class="contentWrapper rightContainer">
+				<div class="inTheTopOfContent companion">
+				</div>
+				<div class="rightContent content">
+				</div>
+			</div>
+		</div>
+
+		<div class="sendMsg">
+			{% csrf_token %}
+			<textarea class="writeMsg" data-mousein-bgcolor='silver'></textarea>
+			<button class="sendButton">SEND</button>
+		</div>
+	</body>
+</html>

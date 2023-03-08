@@ -1,0 +1,129 @@
+body {
+	overflow: hidden;
+}
+span {
+	cursor: default;
+}
+.mainContainer {
+	position: absolute;
+	height: 99%;
+	width: 99%;
+	display: flex;
+}
+.contentWrapper {
+	position: relative;
+}
+.leftContainer {
+	flex-shrink: 0;
+}
+.rightContainer {
+	flex-grow: 1;
+	min-width: 0px;
+}
+.leftContent {
+	border: 2px solid white;
+	border-radius: 10px;
+	background-color: #03001C;
+}
+.rightContent {
+	background-color: #03001C;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+.content {
+	font-size: 200%;
+	position: absolute;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+
+	
+}
+.inTheTopOfContent {
+	position: relative;
+	font-size: 200%;
+	background-color: #144272;
+	border-radius: 20px;
+	color: white;
+}
+.leftContentChatComponent {
+	border: none;
+	border-radius: 10px;
+	background-color: #4B5D67;
+	color: silver;
+	margin-bottom: 0.5%;
+}
+.selectedLeftContentChatComponent {
+	background-color: #7286D3;
+}
+
+.msgDiv {
+	border: 1px solid;
+	border-radius: 10px;
+	background-color: silver;
+}
+.searchField {
+	position: absolute;
+	outline: none;
+	font-size: 100%;
+	border: 1px solid #3E54AC;
+	border-radius: 30px;
+	background-color: #3E54AC;
+	color: white;
+	margin-left: 3%;
+	padding-left: 4%;
+	box-sizing: border-box;
+}
+.searchField::placeholder {
+	color: #DDDDDD;
+}
+.settingsImg, .loupeImg {
+	position: absolute;
+	margin-left: 2%;
+	cursor: pointer;
+}
+.sendMsg {
+	position: fixed;
+	z-index: 100;
+}
+.writeMsg {
+	position: absolute;
+	width: 80%;
+	height: 100%;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+.sendButton {
+	position: absolute;
+	width: 20%;
+	height: 100%;
+	font-size: 200%;
+}
+.companionImg {
+	position: absolute;
+	border-radius: 50%;
+	
+}
+.companionSpan {
+	position: absolute;
+}
+.imgInLeftContent {
+	border-radius: 50%;
+}
+.yourMsg {
+	background-color: #EEEEEE;
+}
+.backToLeftContent {
+	cursor: pointer;
+}
+
+.content::-webkit-scrollbar {
+	display: none;
+}
+.content {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

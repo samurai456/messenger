@@ -1,0 +1,28 @@
+#formDiv {
+	position: absolute;
+}
+input {
+	border: none;
+	border-bottom: 2px solid silver;
+	outline: none;
+	box-sizing: border-box;
+}
+.errorMessage {
+	border: 1px solid #EEEEEE;
+	border-radius: 30px;
+	background-color: #EEEEEE;
+	position: absolute;
+	color: red;
+	text-align: center;
+}
+[name="formButton"] {
+	border: 1px solid #EEEEEE;
+}
+[name="link"] {
+	color: green;
+	cursor: pointer;
+}
+[data-text] {
+	text-align: right;
+	cursor: default;
+}

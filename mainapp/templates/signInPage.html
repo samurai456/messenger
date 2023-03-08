@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script async src="/static/formPage.js"></script>
+		<link rel="stylesheet" type="text/css" href="/static/formPageStyle.css">
+	</head>
+	<body>
+		<div id="formDiv">
+			{% csrf_token %}
+			<input name="nicknameOrEmail" type="text" placeholder="nickname or email" data-lower-case data-validator="nickname" data-valid="">
+			<input name="password" type="password" placeholder="password" data-validator="password" data-valid="">
+			<button name="formButton">SIGN IN</button>
+			<div data-text>not a member yet? <b name="link"><i data-href="/sign-up">sign up</i></b></div>
+		</div>
+	</body>
+<html>

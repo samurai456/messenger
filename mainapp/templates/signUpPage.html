@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script async src="formPage.js"></script>
+		<link rel="stylesheet" type="text/css" href="formPageStyle.css">
+	</head>
+	<body>
+		<div id="formDiv">
+			<input name="nickname" type="text" placeholder="nickname" data-lower-case data-validator="choose-nickname">
+			<input name="email" type="email" placeholder="email" data-validator="set-email">
+			<input name="password" type="password" placeholder="password" data-validator="choose-password">
+			<input name="repeatPassword" type="password" placeholder="repeat password" data-validator="repeat-chosen-password">
+			<button name="formButton">SIGN UP</button>
+			<div data-text>Already a member? <b name="link"><i data-href="/sign-in">sign in</i></b></div>
+		</div>
+	</body>
+<html>
